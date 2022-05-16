@@ -10,10 +10,16 @@ toto
 
 <script type="text/babel">
 function MyComponent() {
-	return <div>tata</div>;
+	var text = "tata";
+	return (<div>{text}</div>);
 
 }
 
-ReactDOM.render(<MyComponent />, document.getElementById('root-react'));
+function Header() {
+	const text = "La maison jungle";
+	return (<h1>{text}</h1>);
+}
+
+ReactDOM.render(<div><Header /><MyComponent /></div>, document.getElementById('root-react'));
 </script>
 </html>
