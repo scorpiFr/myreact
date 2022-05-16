@@ -9,6 +9,11 @@ toto
 <div id="root-react"></div>
 
 <script type="text/babel">
-ReactDOM.render(<div>tata</div>, document.getElementById('root-react'));
+function MyComponent() {
+	return <div>tata</div>;
+
+}
+
+ReactDOM.render(<MyComponent />, document.getElementById('root-react'));
 </script>
 </html>
